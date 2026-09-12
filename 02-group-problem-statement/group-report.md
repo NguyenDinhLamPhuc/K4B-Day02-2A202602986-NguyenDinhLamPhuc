@@ -158,7 +158,6 @@ CURRENT STATE — khoảng 25-40 phút cho một lab mới
 | 4 | Học viên AI20K | Repo / GitHub | Cấu trúc thư mục, file cần nộp | ~5 phút | Phải đối chiếu với yêu cầu ở bước 2-3. |
 | 5 | Học viên AI20K | Tất cả thông tin đã đọc | Checklist + deadline cá nhân | ~5 phút | **Bottleneck chính:** tự hợp nhất nhiều nguồn thành hành động. |
 | 6 | Học viên AI20K | Checklist cá nhân + nguồn gốc | Xác nhận đủ field/file trước khi nộp | ~5 phút | Nếu phát hiện thiếu phải quay lại bước 2-4. |
-| 7 | — | — | — | — | Workflow nguồn hiện có chỉ có 6 bước. |
 
 **Bottleneck chính (2-3 câu):**
 
