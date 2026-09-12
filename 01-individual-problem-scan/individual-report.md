@@ -288,26 +288,26 @@ FUTURE STATE — mục tiêu ≤15 phút
 **Card tôi muốn pitch nhất:**
 
 ```text
-
+Problem #2 — Tìm kiếm và tổng hợp kiến thức từ slide/video bài giảng
 ```
 
 **Vì sao (2-3 câu: workflow gì, số đo gì, impact gì):**
 
 ```text
-
+Workflow này lặp lại gần như sau mỗi buổi học. Hiện quá trình có
+thể tốn khoảng 60 phút/ngày; mục tiêu là giảm xuống ≤20 phút/ngày.
+Impact không chỉ là tiết kiệm khoảng 40 phút/ngày mà còn giúp học viên
+tìm đúng kiến thức nhanh hơn, giảm việc xem lại những đoạn không cần
+thiết và dành nhiều thời gian hơn cho thực hành/bài tập.
 ```
 
 **Câu hỏi tôi muốn nhóm challenge (1-2 câu hỏi đúng chỗ yếu):**
 
 ```text
-
+1. Trong ~60 phút hiện tại, bottleneck thực sự nằm ở việc "tìm đúng
+thông tin" hay ở việc "hiểu và tổng hợp kiến thức"?
+2. AI có thực sự cần thiết không, hay transcript + timestamp + search
+thông thường đã giải quyết đủ phần lớn pain?
 ```
 
-**AI phản biện Card (nếu có):**
-- Điểm yếu AI chỉ ra:
-- Tôi sửa gì:
 
-### Self-check nộp phần 01
-- [ ] Có 5+ problems + top 3 Cards đủ field
-- [ ] Mỗi Card có workflow trước/sau + bottleneck + metric + fallback
-- [ ] Đã chọn 1 card pitch + câu hỏi challenge
