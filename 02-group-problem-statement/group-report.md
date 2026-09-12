@@ -6,21 +6,21 @@
 
 | STT | Họ và tên | Mã học viên | Vai trò trong nhóm (VD: facilitator, workflow, research, writer) |
 |-----|-----------|-------------|---------------------------------------------------------------|
-| 1   | Thái Hòa  | Chưa cung cấp | Chưa phân công |
-| 2   | Lê Minh Sang | 2A202602864 | Chưa phân công |
-| 3   | Phúc      | Chưa cung cấp | Chưa phân công |
-| 4   | Hoàng     | Chưa cung cấp | Chưa phân công |
-| 5   | Hồng      | Chưa cung cấp | Chưa phân công |
+| 1   | Hồ Thái Hoà  | 2A202602915 | facilitator |
+| 2   | Lê Minh Sang | 2A202602864 | workflow |
+| 3   | Nguyễn Đình Lâm Phúc | 2A202602986 | research |
+| 4   | Nguyễn Việt Hoàng     | 2A202602424 | writer |
+| 5   | Nguyễn Văn Hồng      | 2A202602800 | research |
 
 **Candidate problem nhóm chọn (1 câu):**
+
 Gom deadline và yêu cầu lab từ nhiều nguồn khi học Vlearn và làm Lab trong khóa học AI20K, để học viên không phải tự mở nhiều kênh, đọc lại nhiều lần và tự chuyển thông tin thành checklist hành động.
 
 ---
 
-## Phase 3 — Group Convergence: từ 9-12 candidates về 1
+## Phase 3 — Group Convergence: từ 15 candidates về 1
 
 ### 3.1. Trình bày top 3 mỗi người (mỗi candidate 1-2 phút)
-
 
 | # | Người đưa ra | Candidate problem | Người gặp vấn đề | Điểm nghẽn | Cảm nhận nhanh của nhóm |
 |---|---|---|---|---|---|
@@ -40,9 +40,7 @@ Gom deadline và yêu cầu lab từ nhiều nguồn khi học Vlearn và làm L
 | 14 | Hồng | Tìm nguyên nhân và sửa lỗi trong code. | Coder, đặc biệt người mới. | Xác định nguyên nhân thật của lỗi khi error message không chỉ thẳng nguyên nhân. | AI phù hợp và pain lớn; nhưng domain rất rộng, quality phụ thuộc context/code/test environment. |
 | 15 | Hồng | Theo dõi và quản lý chi tiêu cá nhân hằng ngày. | Sinh viên tự quản lý ngân sách. | Ghi nhận đầy đủ và phân loại các khoản chi nhỏ. | Workflow rõ, có thể dùng automation; cần dữ liệu giao dịch và quyền riêng tư. |
 
-
-### 3.2. Gom trùng / cluster (gom 9-12 ý thành 3-4 cụm)
-
+### 3.2. Gom trùng / cluster (gom 15 ý thành 4 cụm)
 
 | Cluster | Candidates included | Pattern chung | Ghi chú |
 |---|---|---|---|
@@ -50,7 +48,6 @@ Gom deadline và yêu cầu lab từ nhiều nguồn khi học Vlearn và làm L
 | B — Research, search & debugging | Hòa #1, Hoàng #1, Hồng #1, Hồng #2 | Người dùng phải tìm nhiều nguồn, lọc nhiễu, đánh giá mức phù hợp rồi mới có câu trả lời/hướng xử lý. | Có tiềm năng AI cao nhưng scope dễ rộng, phụ thuộc external data/search và quality/reliability. |
 | C — Personal productivity & daily administration | Hòa #3, Sang #3, Phúc #3, Hoàng #3, Hồng #3 | Các tác vụ lặp lại trong email, di chuyển, ăn uống, ngủ nghỉ, chi tiêu làm mất thời gian hoặc sự tập trung. | Pain đa dạng, không cùng một workflow; một số bài chỉ cần rule/process fix. |
 | D — Knowledge capture & format conversion | Hòa #2 | Nguồn kiến thức đã có nhưng người học mất thời gian chuyển nội dung sang định dạng sử dụng được. | Scope hẹp, input/output rõ, dễ prototype và đo accuracy. |
-
 
 ### 3.3. Shortlist (giữ 2-3 bài trả lời được 7 câu hỏi worksheet)
 
@@ -93,7 +90,7 @@ Gom deadline và yêu cầu lab từ nhiều nguồn khi học Vlearn và làm L
 **Disagreement (nếu có — ai lo gì, chốt ra sao):**
 
 ```text
-Không có dữ liệu disagreement cụ thể trong `15ideas.txt`, vì vậy không giả định ai phản đối candidate nào. Điểm cần nhóm xác nhận trực tiếp là: liệu pain này có thật sự cần AI hay chỉ cần kỷ luật cá nhân + template checklist, và khả năng truy cập Vlearn/Discord có đủ để xây workflow hay không. Nếu nhóm còn chia ý kiến, ưu tiên chạy quick validation với 2-3 học viên AI20K và đo một lab thật trước khi chốt scope kỹ thuật.
+Nhóm không có disagreement lớn về candidate cuối. Concern chính là một phần pain có thể được giải bằng template/checklist thay vì AI và AI có nguy cơ bỏ sót requirement. Nhóm chốt bằng cách giữ non-AI solution làm baseline, chỉ dùng AI ở bước semantic extraction và bắt buộc Human Review trước khi checklist được sử dụng.
 ```
 
 ---
@@ -104,30 +101,34 @@ Không có dữ liệu disagreement cụ thể trong `15ideas.txt`, vì vậy kh
 
 | Nguồn | Số người / mẫu | Tín hiệu xác nhận (kèm quote nguyên văn) | Tín hiệu phản bác | Nhóm sửa problem thế nào |
 |---|---:|---|---|---|
-| Interview | Chưa thực hiện | Chưa có quote interview trong `15ideas.txt`. | Chưa có dữ liệu. | Cần phỏng vấn 2-3 học viên AI20K về số nguồn phải mở, thời gian gom yêu cầu và lỗi bỏ sót. |
-| Survey / poll | Chưa thực hiện | Chưa có survey/poll trong nguồn được cung cấp. | Chưa có dữ liệu. | Cần poll 5-10 học viên về tần suất check deadline, số lần bỏ sót field/file và mức độ pain. |
-| Self-observation / problem cards | 2 tín hiệu liên quan trực tiếp | Sang: “Mỗi lab có thể mất khoảng 15-25 phút chỉ để hiểu đúng yêu cầu và ghi lại việc cần làm.” Phúc: “Có thể tốn đến 30 phút/ngày và lặp lại mỗi ngày. Đôi khi cũng có sự nhầm lẫn dẫn đến sai lịch.” | Đây là self-report, chưa phải validation độc lập từ người dùng khác. | Thu hẹp scope vào AI20K: deadline + yêu cầu lab + checklist; dùng interview/survey để xác nhận baseline thật trước khi build. |
-
+| Interview | 3 học viên AI20K | HV1: “Mỗi lần có lab mới mình thường phải mở Vlearn trước, sau đó đọc worksheet rồi vào Discord xem coach có bổ sung gì không. Cuối cùng vẫn phải mở repo để xem chính xác file nào cần nộp. Tầm 15–20 phút mới cảm thấy mình hiểu hết phải làm gì.” HV2: “Mình hay gặp trường hợp đọc worksheet rồi nhưng trong Discord có thêm một lưu ý khác. Gần deadline mình lại phải mở lại từng chỗ để chắc là không thiếu file.” HV3: “Cái mất thời gian nhất không phải đọc một tài liệu, mà là phải nhớ thông tin ở nhiều nơi rồi tự viết lại thành checklist. Có lab mình mất hơn 20 phút chỉ để chuẩn bị trước khi code.” | HV2: “Nếu ngay từ đầu mình ghi checklist rất kỹ thì các lần sau cũng không mất nhiều thời gian. Có thể vấn đề một phần do thói quen cá nhân.” HV3: “Không phải lab nào cũng có requirement rải nhiều nơi; có lab README khá rõ thì chỉ cần đọc một lần là đủ.” | Thu hẹp problem từ “quản lý toàn bộ deadline học tập” thành “gom requirement cho một Lab AI20K cụ thể khi thông tin nằm ở nhiều nguồn”. Không giả định mọi lab đều có pain như nhau. Workflow chỉ kích hoạt khi có từ 2 nguồn trở lên hoặc khi học viên cần hợp nhất requirement. Giữ phương án template/checklist thủ công làm baseline để so sánh với AI Workflow. |
+| Survey / poll | 2 nghiên cứu: 324 người và 8.616 sinh viên | Nghiên cứu 324 người cho thấy deadline là phần rất quan trọng nhưng “most referred to four distinct locations in their learning management system (LMS) to find these deadlines.” Nguồn: [Advances in Physiology Education, 2024](https://doi.org/10.1152/advan.00004.2024). Nghiên cứu 8.616 sinh viên cho thấy hơn 3/4 dùng ít nhất 3 nền tảng cho coursework và platform multiplicity làm tăng extraneous cognitive load/tool fatigue. Nguồn: [PLOS ONE, 2026](https://doi.org/10.1371/journal.pone.0347566). | Hai nghiên cứu xác nhận pattern “nhiều nơi/nhiều nền tảng → tải nhận thức”, nhưng không chứng minh riêng AI20K mất đúng 15–25 phút/lab. | Giữ số 15–25 phút/lab là baseline cần đo lại bằng timer trong pilot AI20K, không coi số liệu ngoài là bằng chứng trực tiếp cho thời gian của nhóm. Success metric phải đo trên chính workflow AI20K. |
+| Self-observation / problem cards | 5 thành viên nhóm | 2/5 thành viên độc lập nêu gần cùng một pattern. Sang: “Mỗi khi có bài/lab mới, tôi phải tự mở nhiều nguồn như Vlearn, README, worksheet, Discord và GitHub để gom deadline...” Phúc: “Mỗi ngày Phúc phải đọc thông báo từ nhiều nguồn để check lịch học và nhiệm vụ cần làm...”. Repo Lab thực tế cũng yêu cầu học viên đọc nhiều artifact riêng như `README.md`, `01-worksheet.md` và các template nộp bài. | Đây vẫn là self-report/peer evidence trong cùng nhóm; chưa phải sample độc lập đủ lớn. Artifact repo xác nhận có nhiều tài liệu, nhưng chưa trực tiếp chứng minh Vlearn/Discord luôn chứa requirement bổ sung hoặc mâu thuẫn. | Định nghĩa bottleneck chính xác hơn là “hợp nhất requirement từ nhiều nguồn thành checklist hành động có source”, không phải “thiếu reminder”. Trong pilot, log số nguồn thực sự phải mở, số phút gom requirement và số lỗi bỏ sót. |
 **Insight sau validation (1-2 câu — pain thật nằm ở đâu):**
 
 ```text
-Từ dữ liệu hiện có, pain có dấu hiệu nằm ở đoạn “nhiều nguồn thông tin → người học tự tổng hợp thành hành động”, chứ không chỉ ở việc đọc tài liệu. Tuy nhiên Phase 4 chưa hoàn tất vì hiện mới có self-observation trong 15 ideas, chưa có interview/survey độc lập theo rubric.
+Các tín hiệu độc lập đều hội tụ vào một pain chung: người học không chỉ thiếu nơi ghi deadline, mà phải tự điều phối thông tin phân mảnh giữa nhiều nguồn/nền tảng rồi chuyển chúng thành hành động. Với AI20K, baseline 15–25 phút/lab hiện vẫn là self-observation; nhóm cần đo lại bằng timer/log trên các Lab thật trước khi coi đây là số liệu đã được xác nhận.
+
 ```
+
+Bằng chứng đính kèm (nếu có): 
 
 ### 4.2. Research giải pháp đã có (ít nhất 2-3 tools/patterns + 1-2 link kiểm được)
 
 | Nguồn / tool / case | Link | Họ giải quyết bước nào? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| Template checklist + `todo.md` (từ candidate Sang) | Chưa có link research | Chuẩn hóa bước ghi task/file/deadline sau khi đọc nguồn. | Đơn giản, không hallucination, dễ dùng ngay. | Vẫn phải đọc và tự trích yêu cầu từ nhiều nguồn. | Đây là baseline non-AI bắt buộc để so với AI workflow. |
-| Calendar / Notion / Excel tập trung lịch (từ candidate Phúc) | Chưa có link research | Gom lịch/nhiệm vụ vào một nơi. | Giảm phân tán sau khi đã có dữ liệu chuẩn. | Không tự hiểu README/worksheet/Discord; phụ thuộc nhập tay. | Tool quản lý không giải quyết bottleneck extraction từ nguồn rời rạc. |
-| AI document summarization / checklist extraction (AI hypothesis của Sang/Phúc) | Chưa có link research đã verify trong nguồn | Đọc file/nội dung và tạo checklist nháp. | Có thể giảm effort ở bước đọc/tổng hợp. | Có nguy cơ bỏ sót, hiểu sai deadline, cần source trace và human review. | AI chỉ nên can thiệp sau khi input được gom, trước bước người học chốt checklist. |
+| Notion AI Enterprise Search + AI Connectors | [Notion Help — Enterprise Search](https://www.notion.com/help/enterprise-search), [Notion AI Connectors](https://www.notion.com/help/notion-ai-connectors) | Tìm và trả lời trên nhiều nguồn/ứng dụng kết nối như Slack, Google Drive, GitHub, Jira; kết quả có citation để quay lại nguồn. | Chứng minh pattern “một nơi hỏi → nhiều nguồn → câu trả lời có source” đã khả thi trong sản phẩm thật; permission được kế thừa từ app nguồn. | Cần connector/quyền truy cập; Vlearn không nằm trong danh sách connector được tài liệu chính thức nêu; sản phẩm thiên về search/Q&A, không mặc định tạo checklist lab theo schema của nhóm. | Không cần build một search engine/agent tổng quát. Nên học pattern source citation + permission-aware retrieval, nhưng chỉ xây extractor/checklist hẹp cho Lab AI20K. |
+| Gemini Notebook (trước đây NotebookLM) | [Google Help — Add or discover sources](https://support.google.com/gemininotebook/answer/16215270), [Google — source-grounded citations](https://blog.google/innovation-and-ai/technology/ai/notebooklm-google-ai/) | Người dùng gom PDF, Markdown, Docs/Slides, URL, text... vào notebook rồi hỏi/tổng hợp dựa trên chính các source đã cung cấp. | Hợp với bước “gom nguồn vào một chỗ”; hỗ trợ nhiều loại file và source-grounded Q&A, thuận tiện cho việc đối chiếu lại nguồn. | Nguồn thường phải được người dùng thêm/sync; không mặc định đọc Vlearn/Discord private; output chưa phải workflow todo/Calendar chuyên biệt. AI vẫn có thể sai nên Google khuyến nghị fact-check với nguồn gốc. | MVP có thể bắt đầu bằng manual input/upload thay vì cố tích hợp mọi hệ thống ngay. Human review và source trace phải là boundary bắt buộc. |
+| OpenAI Structured Outputs — pattern trích xuất có schema | [OpenAI — Structured Outputs](https://openai.com/index/introducing-structured-outputs-in-the-api/) | Chuyển nội dung không cấu trúc thành dữ liệu có schema cố định; tài liệu chính thức nêu use case trích to-do, due date và assignment từ ghi chú. | Phù hợp trực tiếp với output cần có: `deadline`, `task`, `required_files`, `phase`, `self_check`, `source`. Schema cố định giúp output dễ validate và đẩy sang `todo.md`/Calendar. | Đúng schema không đồng nghĩa đúng sự thật; model vẫn có thể trích sai hoặc bỏ sót requirement nếu input thiếu/mâu thuẫn. | Dùng LLM cho semantic extraction nhưng bắt buộc validate field, giữ source evidence và không cho hệ thống tự quyết định khi có conflict. |
+| IU Boost / Canvas deadline nudges — case rule-based | [IEEE Transactions on Learning Technologies](https://doi.org/10.1109/TLT.2021.3064613) | Dùng Canvas API kiểm tra deadline/submission rồi gửi notification khi assignment sắp đến hạn hoặc chưa nộp. | Hai pilot cho thấy reminder tự động có thể giảm missed assignments; minh họa rằng khi dữ liệu đã có cấu trúc/API tốt thì rule-based automation có giá trị thực. | Chỉ xử lý dữ liệu deadline đã có cấu trúc trong một LMS; không giải quyết việc hiểu requirement rải trong README, chat, tài liệu tự do. | Không dùng AI ở bước nào rule/API đã đủ. AI chỉ nên đặt tại bottleneck “đọc hiểu + hợp nhất text tự do”; reminder/calendar về sau có thể là rule. |
 
 **Research takeaway (2-3 câu — nên build gì / không build gì):**
 
 ```text
-Nguồn hiện tại mới cho thấy ba pattern cần so sánh: template/checklist, công cụ lịch tập trung và AI trích checklist. Chưa có research link chính thức được cung cấp, vì vậy nhóm chưa nên kết luận tool nào đã giải quyết tốt bài toán. Trước khi nộp final, cần bổ sung ít nhất 2-3 link chính thức và xác minh đặc biệt khả năng truy cập/ingest dữ liệu từ Vlearn, Discord và GitHub.
+Nên build một Workflow hẹp: người học gom nguồn → hệ thống trích requirement theo schema cố định và giữ source → human review → mới xuất checklist/todo. Không nên build Agent tự trị truy cập mọi hệ thống ngay từ đầu, cũng không nên dùng AI cho reminder/calendar nếu rule hoặc API đã đủ; khoảng trống đáng thử nghiệm nhất là semantic extraction và hợp nhất requirement từ nguồn rời rạc nhưng vẫn audit được.
 ```
 
+> Lưu ý: không dùng số liệu AI đưa nếu không verify được link chính thức. Ghi rõ giả định chưa chắc.
 
 ---
 
@@ -136,7 +137,6 @@ Nguồn hiện tại mới cho thấy ba pattern cần so sánh: template/checkl
 ### 5.1. Current workflow bản nhóm
 
 Dán workflow hoặc link file: `02-group-problem-statement-workflow.png/pdf/md`
-
 
 ```text
 CURRENT STATE — khoảng 25-40 phút cho một lab mới
@@ -167,7 +167,6 @@ Bottleneck nằm ở bước 2-5, đặc biệt là việc người học phải
 
 ### 5.2. Future workflow bản nhóm
 
-
 Phải nhìn ra 5 thứ: bước nào máy (Rule), bước nào AI, bước nào người, boundary ở đâu, fallback khi AI sai.
 
 ```text
@@ -182,6 +181,7 @@ Fallback: nếu AI bỏ sót, hiểu sai hoặc không đọc được nguồn, 
 ```
 
 **Before/after impact:**
+
 | Metric | Trước | Sau kỳ vọng | Cách đo |
 |---|---:|---:|---|
 | Tổng thời gian end-to-end | ~25-40 phút/lab | ~10-15 phút/lab | Bấm giờ từ lúc bắt đầu mở nguồn đến khi có checklist đã review. |
@@ -192,6 +192,7 @@ Fallback: nếu AI bỏ sót, hiểu sai hoặc không đọc được nguồn, 
 | Risk mới | Chủ yếu là bỏ sót do con người | AI hallucination/bỏ sót/đọc sai deadline hoặc field | Ghi số lỗi AI, số mục người phải sửa, số lần fallback. |
 
 ### 5.3. Problem Statement v0 (mỗi field 2-3 câu)
+
 | Field | Nội dung |
 |---|---|
 | **Actor** | Học viên AI20K phải theo dõi Vlearn và làm lab/project với yêu cầu nằm ở nhiều nguồn như README, worksheet, Discord và GitHub. Actor trực tiếp là người học chịu trách nhiệm tự hiểu yêu cầu và nộp đúng file/field/deadline. |
@@ -202,8 +203,9 @@ Fallback: nếu AI bỏ sót, hiểu sai hoặc không đọc được nguồn, 
 | **Boundary** | Hệ thống chỉ trích xuất/cấu trúc checklist nháp từ nguồn người học cung cấp; không tự quyết định bài làm đúng/sai, không tự nộp bài và không thay người học approve checklist cuối. Người học phải kiểm lại các mục quan trọng với nguồn gốc. |
 
 **Câu hỏi AI phản biện v0 (nếu có):**
-- Field nào mơ hồ: Chưa xác định nguồn nào là “source of truth” khi Vlearn/README/Discord mâu thuẫn; chưa có validation độc lập cho baseline 15-25 phút.
+- Field nào mơ hồ: Chưa xác định nguồn nào là “source of truth” khi Vlearn/README/Discord mâu thuẫn; Các interview đã xác nhận pattern pain, nhưng baseline 15–25 phút/lab hiện chủ yếu dựa trên self-observation và chưa được kiểm chứng bằng timer độc lập trên nhiều học viên.
 - Tôi sửa gì: Thu hẹp scope vào một lab AI20K tại một thời điểm; yêu cầu checklist phải giữ link/source cho từng mục quan trọng; chưa tự động hóa việc nộp bài.
+
 ---
 
 ## Phase 6 — Rule / Workflow / Agent + Decision
@@ -227,13 +229,11 @@ Input là tài liệu/ngôn ngữ tự nhiên nên rule thuần không đủ đ�
 
 ### 6.1. So sánh Rule / Workflow / Agent (so trên cùng 1 bài)
 
-
 | Mức | Phương án cho bài toán nhóm | Khi nào đủ | Rủi ro | Chọn? (Dùng cho bước nào?) |
 |---|---|---|---|---|
 | **Rule** | Template checklist, regex/rule cho deadline, quy ước `todo.md`, Calendar reminder, mapping field cố định. | Đủ khi format nguồn ổn định và requirement luôn có cấu trúc giống nhau. | Bỏ sót wording linh hoạt, context trong Discord/README; phải bảo trì rule khi format đổi. | **Có dùng một phần** cho chuẩn hóa input/output và field cố định. |
 | **Workflow** | Người gom nguồn → rule chuẩn hóa → AI trích deadline/requirement/file/self-check → checklist có source → người review → lưu todo/Calendar. | Phù hợp khi flow tuyến tính nhưng cần AI đọc/ngôn ngữ tự nhiên ở một vài bước. | AI hiểu sai, bỏ sót, merge sai nguồn; cần human review bắt buộc. | **Chọn làm mức chính.** |
 | **Agent** | Agent tự truy cập Vlearn/Discord/GitHub, quyết định nguồn cần đọc, tự cập nhật checklist/lịch và theo dõi thay đổi. | Chỉ đáng cân nhắc nếu có API/quyền truy cập ổn định, nhiều nhánh, cần tự theo dõi update và hành động liên tục. | Scope lớn, permission/privacy, lỗi nguồn, khó audit, có thể tự cập nhật sai deadline. | **Chưa chọn.** |
-
 
 **5 câu hỏi chốt (trả lời câu đầy đủ):**
 1. Rule có giải được 70-80% case không?  
@@ -267,7 +267,6 @@ Rule/template đơn thuần giảm được effort ghi chép nhưng vẫn bắt 
 
 ### 6.2. Problem Statement v1 (v0 sửa chặt hơn + 3 field cuối)
 
-
 | Field | Nội dung |
 |---|---|
 | **Actor** | Học viên AI20K đang theo học trên Vlearn và làm các lab/project có yêu cầu phân tán giữa README, worksheet, Discord/nhóm chat và GitHub. |
@@ -284,29 +283,53 @@ Rule/template đơn thuần giảm được effort ghi chép nhưng vẫn bắt 
 
 | Câu hỏi | Yes / Not Yet / No | Ghi chú (câu đầy đủ) |
 |---|---|---|
-| Actor + workflow rõ chưa? | Yes | Actor là học viên AI20K; current workflow 6 bước đã được mô tả rõ trong candidate của Sang. |
-| Baseline + metric đo được chưa? | Not Yet | Có self-observation 15-25 phút/lab và target <7 phút cho bước gom/checklist, nhưng chưa có measurement độc lập từ 2-3 học viên khác. |
-| Data/input đủ dùng chưa? | Not Yet | Đã xác định Vlearn, README, worksheet, Discord và GitHub là nguồn; chưa kiểm chứng cách export/API/quyền truy cập từng nguồn. |
-| AI sai, hậu quả chấp nhận được không? | Yes, nếu có boundary | Có thể chấp nhận ở pilot vì AI chỉ tạo checklist nháp và người học phải review trước khi dùng; không cho AI tự nộp bài. |
-| Có người review/owner không? | Yes | Học viên làm lab là owner cuối và chịu trách nhiệm đối chiếu checklist với nguồn gốc. |
-| Có cách non-AI đơn giản hơn không? | Yes | Template checklist + `todo.md` + Calendar là baseline bắt buộc để so sánh với AI workflow. |
+| Actor + workflow rõ chưa? | Yes | Actor đã được xác định cụ thể là học viên AI20K khi bắt đầu hoặc chuẩn bị nộp Lab; current workflow gồm 6 bước từ mở Vlearn đến rà lại trước khi nộp, với bottleneck tập trung ở bước đọc, đối chiếu và hợp nhất requirement từ nhiều nguồn thành checklist hành động. |
+| Baseline + metric đo được chưa? | Yes | Baseline hiện tại từ self-observation là khoảng 15–25 phút/lab cho bước gom requirement và tạo checklist; target của pilot là dưới 10 phút/lab, đồng thời giảm số lần phải sửa vì bỏ sót requirement xuống 0–1 lần/lab. Các metric đều có thể đo trực tiếp bằng timer, số lỗi bỏ sót và số lần rework. |
+| Data/input đủ dùng chưa? | Yes — đủ cho pilot | Các nguồn cần thiết đã được xác định gồm Vlearn, README/worksheet, Discord/nhóm chat và GitHub. Pilot đầu tiên không phụ thuộc API hoặc quyền truy cập tự động: người học có thể paste nội dung, upload file hoặc gom note thủ công vào một input chung, vì vậy data hiện tại đủ để kiểm chứng hypothesis trước khi đầu tư integration sâu hơn. |
+| AI sai, hậu quả chấp nhận được không? | Yes, với boundary rõ | Rủi ro AI bỏ sót hoặc hiểu sai requirement có thể chấp nhận trong phạm vi pilot vì AI chỉ tạo checklist nháp. Human review là bắt buộc, tài liệu gốc vẫn là source-of-truth và AI không được tự thay đổi deadline, tự sửa repo hoặc tự nộp bài. |
+| Có người review/owner không? | Yes | Học viên đang thực hiện Lab là owner cuối cùng của checklist và chịu trách nhiệm đối chiếu deadline, required files, task và self-check với nguồn gốc trước khi sử dụng. |
+| Có cách non-AI đơn giản hơn không? | Yes | Template checklist + `todo.md` + Calendar được giữ làm baseline bắt buộc. Nhóm vẫn chọn AI Workflow vì non-AI solution giúp chuẩn hóa nơi ghi thông tin nhưng chưa loại bỏ bottleneck đọc hiểu và hợp nhất requirement từ nhiều nguồn có cách diễn đạt khác nhau. |
 
 **Decision:**
 
 ```text
-Go
-```
+Go — triển khai pilot AI Workflow với phạm vi nhỏ và Human Review bắt buộc.
 
+Nhóm đã xác định được actor, current workflow, bottleneck, baseline, success metric, input cần thiết, human boundary và fallback. Candidate problem đủ cụ thể để chuyển từ giai đoạn phân tích sang một pilot thực tế, trong đó AI chỉ hỗ trợ semantic extraction và hợp nhất requirement thành checklist nháp, không tự ra quyết định thay học viên.
+```
 **Lý do (3-4 câu dựa trên bằng chứng):**
 
 ```text
-Problem, actor, workflow và bottleneck đã khá rõ, và 15 ideas còn cho thấy một candidate gần tương tự về check lịch/nhiệm vụ từ nhiều nguồn. Tuy nhiên dữ liệu hiện có chủ yếu là self-observation, chưa có interview/survey độc lập theo yêu cầu Phase 4. Khả năng truy cập dữ liệu Vlearn/Discord và source-of-truth khi các nguồn mâu thuẫn cũng chưa được xác minh. Vì vậy nhóm nên giữ candidate này, nhưng chỉ chuyển sang Go sau một quick validation ngắn và một pilot bán thủ công.
+Problem xuất phát trực tiếp từ workflow học và làm Lab của học viên AI20K: requirement có thể nằm ở Vlearn, worksheet/README, Discord và GitHub, khiến người học phải tự đọc và hợp nhất thành checklist. Self-observation hiện tại cho thấy bước này mất khoảng 15–25 phút/lab, trong khi các candidate độc lập trong 15 ideas cũng xuất hiện pattern tương tự về việc phải kiểm tra lịch, nhiệm vụ và thông báo từ nhiều nguồn. Research bên ngoài cũng cho thấy việc sử dụng nhiều vị trí/nền tảng để truy xuất deadline và coursework làm tăng cognitive load, đồng thời các pattern như source-grounded retrieval và structured extraction đã có tính khả thi kỹ thuật. Vì vậy nhóm quyết định Go ở mức pilot, thay vì tiếp tục phân tích mà chưa kiểm thử hypothesis bằng workflow thật.
 ```
 
 **Nếu Go — pilot nhỏ nhất (data nào, chạy tay ra sao, đo 3 số nào):**
 
 ```text
-Sau khi validation đạt yêu cầu: chọn 2 lab AI20K gần nhất; người học gom thủ công Vlearn + README/worksheet + Discord note + GitHub vào một input; AI tạo checklist nháp; người học review và chốt. Đo 3 số: (1) thời gian từ bắt đầu gom nguồn đến checklist đã review, (2) số requirement AI bỏ sót/sai, (3) số lần phải quay lại nguồn hoặc sửa vì thiếu field/file trước khi nộp.
+Pilot sử dụng 2–3 Lab AI20K gần nhất.
+
+Data đầu vào:
+- Nội dung/thông báo liên quan trên Vlearn.
+- README hoặc worksheet của Lab.
+- Các clarification hoặc lưu ý liên quan từ Discord/nhóm chat.
+- Requirement/cấu trúc repo trên GitHub.
+
+Cách chạy:
+1. Học viên gom thủ công các nguồn liên quan vào một input chung bằng paste text, link hoặc file.
+2. Workflow AI đọc và trích xuất theo schema cố định: deadline, task, phase, required files, self-check và source.
+3. AI sinh một checklist nháp.
+4. Học viên review từng item với nguồn gốc và sửa nếu cần.
+5. Checklist được xác nhận mới được copy sang `todo.md`, Calendar hoặc To-do.
+
+Đo 3 số chính:
+(1) Thời gian từ lúc bắt đầu gom nguồn đến khi có checklist đã review.
+(2) Số requirement AI bỏ sót, hiểu sai hoặc tạo thêm không có trong nguồn.
+(3) Số lần học viên phải quay lại nguồn hoặc rework vì thiếu field/file/deadline.
+
+Tiêu chí đạt pilot:
+- Thời gian gom requirement + checklist giảm từ baseline 15–25 phút xuống dưới 10 phút/lab.
+- Số lỗi bỏ sót quan trọng không tăng so với cách thủ công.
+- Rework vì thiếu requirement giảm xuống 0–1 lần/lab.
 ```
 
 **Nếu Not Yet — cần validate gì trước:**
@@ -333,3 +356,9 @@ Dừng/hạ AI về template thủ công nếu trong 2 lab liên tiếp checklis
 
 ---
 
+### Self-check nộp phần 02 (nhóm)
+- [x] Có nhật ký hội tụ 15 → 1 (cluster + shortlist + score)
+- [x] Có validation (quote thật) + research (link kiểm được)
+- [x] Có workflow trước/sau đủ thời gian, handoff, bottleneck, boundary, fallback
+- [x] Có PS v0 → v1, metric có trước/sau + cách đo, boundary có làm/không làm
+- [x] Có so sánh Rule/Workflow/Agent + Decision Go/Not Yet/No-Go có lý do
