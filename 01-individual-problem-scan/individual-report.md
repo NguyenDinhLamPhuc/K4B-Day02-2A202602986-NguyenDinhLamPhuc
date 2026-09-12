@@ -4,10 +4,14 @@
 
 ## Thông tin cá nhân
 
-- Họ và tên:
-- Mã học viên:
-- Vai trò / bối cảnh (VD: sinh viên năm X, intern PM, ...):
+- Họ và tên: Nguyễn Đình Lâm Phúc
+- Mã học viên: 2A202602986
+- Vai trò / bối cảnh (VD: sinh viên năm X, intern PM, ...): Phúc, sinh viên năm 4, intern AI thực chiến đại học VinUni. Mỗi tuần Phúc lên trường học trong ngày và tối về build phase.
 - Công việc hằng tuần (3-5 gạch đầu dòng để soi problem):
+  + Check lịch học hàng ngày và nhiệm vụ trong ngày.
+  + Xem lại video và slide bài giảng tìm kiếm kiến thức đã quên.
+  + Luyện tập ôn lại kiến thức.
+  + Tìm kiếm trang nộp bài để nộp deadline.
 
 ---
 
@@ -17,12 +21,12 @@
 
 | # | Lăng kính (Lặp lại / Tốn thời gian / AI có thể tốt hơn / Pain từ người khác) | Problem quan sát được | Ai chịu ảnh hưởng? | Dấu hiệu thật (số + bằng chứng) |
 |---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
-| 6 | | | | |
+| 1 |Lặp lại|Mỗi ngày phải check lịch học và nhiệm vụ cần làm |Bản thân |Lặp lại mỗi ngày |
+| 2 |Tốn thời gian |Phải xem lại slide và video bài giảng dài để tìm kiếm thông tin bài học |Bản thân |Tốn tầm 60 phút/ngày |
+| 3 |AI có thể tốt hơn |Sau mỗi buổi học lý thuyết cần tự tổng hợp câu hỏi để tập luyện |Bản thân |Tốn tầm 30 phút/lần |
+| 4 |Pain từ người khác |Đến hạn nộp các bài tập thì khó để tìm được cách nộp bài |Học viên |Có 3-5 câu hỏi trong 1 lần nộp |
+| 5 |Lặp lại |Khi bắt đầu buổi học cần xem lại buổi học trước đã học đến đâu |Bản thân |Lặp lại mỗi buổi học mới |
+| 6 |Tốn thời gian |Đến giờ ăn trưa cần phãi xếp hàng rất lâu mới lấy được thức ăn |Học viên |Tốn 30 phút/bữa |
 | 7 | | | | |
 | 8 | | | | |
 | 9 | | | | |
@@ -50,60 +54,83 @@ Giữ bài nào: actor cụ thể, workflow vẽ được 3-7 bước, bottlenec
 
 | Rank | Problem (copy từ bảng scan) | Vì sao chọn (2-3 ý) | Điều còn chưa chắc |
 |---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 |Check lịch học và nhiệm vụ |Mất nhiều thời gian, actor cụ thể |Thông tin cập nhật nhiều dễ bị nhầm lẫn khi check |
+| 2 |Tìm kiếm thông tin bài giảng |Có pain thật, AI có thể giúp tóm tắt |Qúa nhiều lý thuyết gây ra khó tổng hợp |
+| 3 |Ăn trưa |Có actor cụ thể, mất thời gian, phiền toái lớn cần phải được giải quyết |Khó tìm kiếm thông tin quán ăn và đơn giá đầy đủ |
 
 ### 2.2. Problem Cards chi tiết (lặp lại cho cả 3 cards)
 
 ---
 
-#### Problem Card #1 — [Tên problem]
+#### Problem Card #1 — [Check lịch học]
 
 ```text
 Problem 1 câu:
+ Mỗi ngày Phúc phải đọc thông báo từ nhiều nguồn để check lịch học và nhiệm vụ cần làm, trong đó việc xem thông báo dễ gây nhầm lẫn và tốn thời gian.
+Actor: Học viên tham giá khóa học.
 
-Actor:
-
-Thời điểm / bối cảnh:
+Thời điểm / bối cảnh: Mỗi ngày có buổi học.
 
 Current workflow 3-7 bước:
-1.
-2.
-3.
-4.
-5.
+1.Mở các trang thông tin và mail
+2.Tìm kiếm thông báo từ lab coach hay ban đào tạo
+3.Kiểm tra sự thay đổi và cập nhật mới
+4.Tổng hợp lại các thông tin bị thay đổi
+5.Lập bảng biểu và nhiệm vụ trong ngày 
 
 Bottleneck:
-
+Bước 3 - Kiểm tra thông tin thay đổi hay bị nhầm lẫn do có nhiều cập nhật và tốn 15 phút mỗi lần.
 Impact:
-
+Có thể tốn đến 30 phút/ngày và lặp lại mỗi ngày. Đôi khi cũng có sự nhầm lẫn dẫn đến sai lịch
 Success metric:
-
+Giảm thời gian kiểm tra xuống 10 phút và giảm tối đa sai sót.
 Non-AI alternative:
-
+Tạo một nguồn lịch tập trung duy nhất bằng Calendar/Notion/Excel và quy định format chuẩn cho thông báo thay đổi.
 AI hypothesis:
+AI hỗ trợ đọc thông báo và tổng hợp thông tin từ đó đề xuất bảng biểu và nhiệm vụ cho học viên.
+Quick gut: Workflow
 
-Quick gut:
-[ ] No AI / process fix
-[ ] Rule
-[ ] Workflow
-[ ] Agent
-[ ] Chưa biết
 ```
 
 **Draft workflow Card #1** (ASCII / Mermaid / ảnh đính kèm):
 
 ```text
-CURRENT STATE — ___ phút
+CURRENT STATE — ~30 phút/ngày
 
-[1 ...: __'] → [2 ...: __'] → [3 ...: __'] → [4 ...: __']  <-- bottleneck
+[1. Mở các nguồn thông tin: LMS / Email / Group: ~5']
+        ↓
+[2. Tìm thông báo từ Lab Coach / Ban đào tạo: ~7']
+        ↓
+[3. Đọc + đối chiếu với thông tin cũ để phát hiện thay đổi: ~10']
+        ↓
+[4. Tổng hợp các thay đổi quan trọng: ~5']
+        ↓
+[5. Cập nhật lịch học + nhiệm vụ trong ngày: ~3']
+                         ↑
+                    BOTTLENECK
 
-FUTURE STATE — ___ phút
 
-[1 ...: __'] → [2 ...: __'] → [3 ... review: __']  <-- human boundary
+FUTURE STATE — mục tiêu ≤10 phút/ngày
 
-Fallback: nếu AI sai thì ...
+[Nguồn thông báo: LMS / Email / Group]
+        ↓
+[1. Workflow tự động lấy thông báo mới]
+        ↓
+[2. AI trích xuất thông tin]
+        ↓
+[3. Hệ thống so sánh với dữ liệu hiện tại]
+        ↓
+[4. AI tổng hợp các thay đổi cần chú ý: ~1–2']
+        ↓
+[5. HỌC VIÊN REVIEW + CONFIRM: ~3–5']  ← HUMAN BOUNDARY
+        ↓
+       ┌───────────┴───────────┐
+       ↓                       ↓
+   [Đúng]                  [AI sai]
+       ↓                       ↓
+[Confirm update]          [Sửa thủ công]
+       ↓                       ↓
+[Cập nhật lịch/task]      [Confirm lại]
 ```
 
 File đính kèm (nếu vẽ riêng): `01-individual-problem-scan-workflow-card-1.png`
