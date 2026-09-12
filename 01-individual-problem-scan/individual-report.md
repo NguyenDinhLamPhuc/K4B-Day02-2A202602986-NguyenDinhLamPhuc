@@ -27,30 +27,13 @@
 | 4 |Pain từ người khác |Đến hạn nộp các bài tập thì khó để tìm được cách nộp bài |Học viên |Có 3-5 câu hỏi trong 1 lần nộp |
 | 5 |Lặp lại |Khi bắt đầu buổi học cần xem lại buổi học trước đã học đến đâu |Bản thân |Lặp lại mỗi buổi học mới |
 | 6 |Tốn thời gian |Đến giờ ăn trưa cần phãi xếp hàng rất lâu mới lấy được thức ăn |Học viên |Tốn 30 phút/bữa |
-| 7 | | | | |
-| 8 | | | | |
-| 9 | | | | |
-| 10 | | | | |
 
-> Gợi ý tự soi: tuần trước mất nhiều thời gian nhất vào việc gì? Việc gì hay trì hoãn? Người khác hay hỏi lại câu gì? Workflow nào ai cũng biết là chậm?
-
-**AI đã dùng ở Phase 1 (nếu có):**
-- Prompt đã hỏi:
-- Ý dùng được:
-- Ý bỏ vì không phải pain thật:
-
-**Self-check Phase 1:**
-- [ ] Đủ 5+ dòng, mỗi dòng có actor + số đo cụ thể
-- [ ] Dùng ít nhất 3/4 lăng kính
-- [ ] Không có dòng chung chung kiểu "mất nhiều thời gian"
 
 ---
 
 ## Phase 2 — Top 3 Problem Cards
 
 ### 2.1. Chọn top 3
-
-Giữ bài nào: actor cụ thể, workflow vẽ được 3-7 bước, bottleneck ở 1 bước, impact đo được. Loại bài quá rộng.
 
 | Rank | Problem (copy từ bảng scan) | Vì sao chọn (2-3 ý) | Điều còn chưa chắc |
 |---|---|---|---|
@@ -71,7 +54,7 @@ Actor: Học viên tham giá khóa học.
 
 Thời điểm / bối cảnh: Mỗi ngày có buổi học.
 
-Current workflow 3-7 bước:
+Current workflow 5 bước:
 1.Mở các trang thông tin và mail
 2.Tìm kiếm thông báo từ lab coach hay ban đào tạo
 3.Kiểm tra sự thay đổi và cập nhật mới
@@ -92,7 +75,7 @@ Quick gut: Workflow
 
 ```
 
-**Draft workflow Card #1** (ASCII / Mermaid / ảnh đính kèm):
+**Draft workflow Card #1**:
 
 ```text
 CURRENT STATE — ~30 phút/ngày
@@ -133,111 +116,170 @@ FUTURE STATE — mục tiêu ≤10 phút/ngày
 [Cập nhật lịch/task]      [Confirm lại]
 ```
 
-File đính kèm (nếu vẽ riêng): `01-individual-problem-scan-workflow-card-1.png`
-
 ---
 
-#### Problem Card #2 — [Tên problem]
+#### Problem Card #2 — [Tìm kiếm thông tin bài giảng]
 
 ```text
 Problem 1 câu:
-
+Sau mỗi buổi học, Phúc phải xem lại slide và video bài giảng dài
+để tìm kiếm và tổng hợp những kiến thức cần thiết, khiến việc ôn tập
+tốn nhiều thời gian và dễ bỏ sót thông tin quan trọng.
 Actor:
-
+Học viên tham gia khóa học.
 Thời điểm / bối cảnh:
+Sau buổi học hoặc khi cần ôn lại kiến thức để làm bài tập,
+project hoặc chuẩn bị cho buổi học tiếp theo.
+Current workflow 7 bước:
 
-Current workflow 3-7 bước:
-1.
-2.
-3.
-4.
-5.
+1. Mở slide và video của buổi học.
+2. Xác định phần kiến thức cần tìm hoặc cần ôn.
+3. Tìm kiếm thủ công trong slide.
+4. Tua/xem lại các đoạn video có khả năng chứa thông tin cần thiết.
+5. Đọc/xem lại phần lý thuyết liên quan.
+6. Tổng hợp các ý quan trọng thành ghi chú.
+7. Sử dụng ghi chú để học hoặc làm nhiệm vụ.
 
 Bottleneck:
+Bước 3–6-Học viên phải tìm kiếm thông tin nằm rải rác giữa slide và video.
+Video dài khó xác định chính xác đoạn chứa kiến thức cần tìm,
+trong khi lượng lý thuyết lớn khiến việc xác định và tổng hợp
+ý chính tốn nhiều thời gian.
 
 Impact:
-
+~60 phút/ngày cho việc tìm kiếm, xem lại và tổng hợp. Có khả năng bỏ sót nội dung quan trọng.
 Success metric:
-
+ Giảm thời gian tìm kiếm + tổng hợp từ ~60 phút xuống ≤20 phút/ngày.Các nội dung quan trọng vẫn được truy xuất đầy đủ và có thể kiểm tra lại từ slide/video gốc.
 Non-AI alternative:
-
+Tự tạo note sau mỗi buổi học.Sử dụng Ctrl+F/search trong slide hoặc transcript video.
 AI hypothesis:
+Nếu AI có thể xử lý slide và transcript của video bài giảng,
+xác định các chủ đề và ý chính, sau đó cho phép học viên tìm kiếm
+bằng câu hỏi tự nhiên và trả kết quả kèm vị trí trong tài liệu gốc.
+Quick gut: Workflow
 
-Quick gut:
-[ ] No AI / process fix
-[ ] Rule
-[ ] Workflow
-[ ] Agent
-[ ] Chưa biết
 ```
 
 **Draft workflow Card #2:**
 
 ```text
-CURRENT STATE — ___ phút
+CURRENT STATE — ~60 phút/ngày
 
-[1 ...] → [2 ...] → [3 ...]  <-- bottleneck
+[1. Mở slide + video bài giảng: ~3']
+        ↓
+[2. Xác định nội dung cần tìm/ôn lại: ~2']
+        ↓
+[3. Tìm kiếm trong slide: ~10']
+        ↓
+[4. Tua + xem lại video để tìm đoạn liên quan: ~25']
+        ↓
+[5. Đọc/xem lại lý thuyết liên quan: ~10']
+        ↓
+[6. Tổng hợp và ghi chú kiến thức: ~10']
+                 ↑
+             BOTTLENECK
 
-FUTURE STATE — ___ phút
+FUTURE STATE — mục tiêu ≤20 phút/ngày
 
-[1 ...] → [2 ...] → [3 ... review]  <-- human boundary
-
-Fallback: ...
+[Slide + Video bài giảng]
+        ↓
+[1. Workflow lấy tài liệu]
+        ↓
+[2. Hệ thống xử lý:
+    Video → Transcript
+    Slide → Text
+    Nội dung → Topic/Section]
+        ↓
+[3. Index nội dung theo câu hỏi học viên gửi]
+        ↓
+[4. Hệ thống tìm các đoạn liên quan: <1']
+                 ↓
+[5. AI tổng hợp câu trả lời / ý chính: ~1']
+                 ↓
+[6. Hiển thị nguồn]
+                 ↓
+[7. HỌC VIÊN REVIEW: ~5–15']  ← HUMAN BOUNDARY
+                 ↓
+        ┌────────┴────────┐
+        ↓                 ↓
+     [Đủ/đúng]      [Thiếu / nghi ngờ]
+        ↓                 ↓
+ [Lưu vào note]    [Mở slide/video gốc]
+                          ↓
+                    [Kiểm tra thủ công]
 ```
-
-File đính kèm: `01-individual-problem-scan-workflow-card-2.png`
 
 ---
 
-#### Problem Card #3 — [Tên problem]
+#### Problem Card #3 — [Ăn trưa]
 
 ```text
 Problem 1 câu:
-
+Vào giờ ăn trưa, học viên phải mất nhiều thời gian xếp hàng lâu để lấy thức ăn, khiến một phần đáng kể thời gian nghỉ trưa bị lãng phí.
 Actor:
-
+Học viên tham gia khóa học.
 Thời điểm / bối cảnh:
-
-Current workflow 3-7 bước:
-1.
-2.
-3.
-4.
-5.
+Đến giờ nghỉ trưa, khi học viên cần lựa chọn lấy đồ ăn trong khoảng thời gian nghỉ có hạn.
+Current workflow 7 bước:
+1. Đến giờ nghỉ trưa và bắt đầu tìm quán/món ăn.
+2. Tìm kiếm thông tin các quán ăn xung quanh.
+3. Kiểm tra menu, giá và món đang có.
+4. So sánh và quyết định ăn ở đâu / ăn món gì.
+5. Di chuyển đến quán.
+6. Xếp hàng, gọi món và chờ lấy thức ăn.
+7. Lấy đồ ăn.
 
 Bottleneck:
-
+Bước 6-Đến giờ cao điểm, nhiều học viên cùng mua đồ ăn nên phải
+xếp hàng và chờ lâu mới nhận được thức ăn.
 Impact:
-
+ Có thể tốn khoảng 30 phút/bữa cho việc tìm kiếm, lựa chọn và chờ đợi. Giảm thời gian thực sự dành cho ăn uống/nghỉ ngơi.
 Success metric:
-
+ Giảm tổng thời gian từ lúc bắt đầu tìm món đến lúc nhận được đồ ăn. Mục tiêu ban đầu: từ ~30 phút xuống ≤15 phút.
 Non-AI alternative:
-
+Tạo danh sách tập trung các quán gần nơi học cùng menu và khoảng giá. Quán chuẩn bị sẵn các suất ăn phổ biến trước giờ nghỉ trưa.
 AI hypothesis:
-
-Quick gut:
-[ ] No AI / process fix
-[ ] Rule
-[ ] Workflow
-[ ] Agent
-[ ] Chưa biết
+Nếu hệ thống có thể tổng hợp thông tin quán, menu, giá  sau đó đề xuất nhanh các lựa chọn phù hợp với nhu cầu của học viên tại thời điểm ăn trưa, thì thời gian tìm kiếm và lựa chọn món có thể giảm đáng kể.
+Quick gut: WORKFLOW
 ```
 
 **Draft workflow Card #3:**
 
 ```text
-CURRENT STATE — ___ phút
+CURRENT STATE — ~30 phút/bữa
 
-[1 ...] → [2 ...] → [3 ...]  <-- bottleneck
+[1. Đến giờ nghỉ trưa: ~1']
+        ↓
+[2. Tìm quán ăn / hỏi bạn bè / xem thông tin: ~5']
+        ↓
+[3. Kiểm tra món + giá: ~3']
+        ↓
+[4. Chọn quán và món: ~3']
+        ↓
+[5. Di chuyển đến quán: ~5']
+        ↓
+[6. Xếp hàng + gọi món + chờ nhận đồ ăn: ~13']
+                         ↑
+                    BOTTLENECK
 
-FUTURE STATE — ___ phút
+FUTURE STATE — mục tiêu ≤15 phút
 
-[1 ...] → [2 ...] → [3 ... review]  <-- human boundary
-
-Fallback: ...
+[1. Đến giờ ăn trưa]
+        ↓
+[2. Mở hệ thống danh sách quán]
+        ↓
+[3. Xem thông tin quán]
+        ↓
+[4. Chọn món: ≤3']
+        ↓
+[5. Đặt món trước]
+        ↓
+[6. Học viên di chuyển đến quán]
+        ↓
+[7. Xác nhận đơn + nhận món: ≤2–5']
+        ↓
+[HỌC VIÊN KIỂM TRA ĐƠN] ← HUMAN BOUNDARY
 ```
-
-File đính kèm: `01-individual-problem-scan-workflow-card-3.png`
 
 ---
 
